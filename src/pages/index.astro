@@ -10,13 +10,13 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/family-working-out.jpg";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/features-image.avif";
 import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
+import functional from "@images/atletas-haciendo-box-jumps.jpg";
 import dashboard from "@images/dashboard-image.avif";
 
 const avatarSrcs: Array<string> = [
@@ -28,19 +28,19 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
+  <!-- <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
+    title=`Bienvenido a <span
+        class="text-red-600 dark:text-red-600">CrossFit Xela</span>`
+    subTitle="Tu camino hacia una mejor versión de ti mismo comienza aquí. Somos el único gimnasio afiliado a CrossFit en Quetzaltenango, ofreciendo más de 8 años de experiencia en transformar vidas a través de entrenamiento funcional y comunidad."
+    primaryBtn="¿Por qué elegirnos?"
     primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
+    secondaryBtn="Agenda tu clase de prueba"
     secondaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}
@@ -68,16 +68,16 @@ const avatarSrcs: Array<string> = [
     title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Movimientos Funcionales",
         content:
           "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
         svg: "tools",
-        src: tools,
+        src: functional,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Levantamiento de Pesas",
         content:
           "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
         svg: "dashboard",
@@ -86,7 +86,7 @@ const avatarSrcs: Array<string> = [
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Movimientos de Gimnasia",
         content:
           "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
         svg: "house",

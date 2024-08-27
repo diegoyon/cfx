@@ -1,12 +1,14 @@
 import ogImageSrc from "@images/social.png";
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  title: "CrossFit Xela",
+  tagline: "Transforma tu Vida, Únete a la Comunidad",
+  description:
+    "CrossFit Xela es el único gimnasio afiliado a CrossFit en Quetzaltenango, Guatemala. Ofrecemos entrenamiento funcional de alta calidad con coaches certificados y más de 8 años de experiencia ayudando a nuestra comunidad a alcanzar sus metas de fitness. Descubre nuestra oferta de clases y únete a una comunidad apasionada por el bienestar.",
+  description_short:
+    "El único gimnasio afiliado a CrossFit en Quetzaltenango, con más de 8 años de experiencia y coaches certificados.",
+  url: "https://crossfitxela.com",
+  author: "Diego Yon",
 };
 
 export const SEO = {
@@ -15,7 +17,7 @@ export const SEO = {
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    inLanguage: "en-US",
+    inLanguage: "es-GT",
     "@id": SITE.url,
     url: SITE.url,
     name: SITE.title,
@@ -30,10 +32,11 @@ export const SEO = {
 };
 
 export const OG = {
-  locale: "en_US",
+  locale: "es-GT",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Entrenamiento Funcional & Comunidad CrossFit`,
+  description:
+    "CrossFit Xela ofrece entrenamiento funcional de alta calidad en Quetzaltenango. Con más de 8 años de experiencia, coaches certificados y un ambiente comunitario, somos el lugar perfecto para transformar tu vida. ¡Únete a nuestra comunidad hoy!",
   image: ogImageSrc,
 };
