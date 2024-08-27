@@ -5,13 +5,9 @@ import NavLink from "@components/ui/links/NavLink.astro";
 import MegaMenuLink from "@components/ui/links/MegaMenuLink.astro";
 import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
-import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
-// Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
 ---
 
 <!-- Main header component -->
@@ -27,7 +23,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
       <!-- Brand logo -->
       <a
         class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-        href={homeUrl}
+        href="/"
         aria-label="Brand"
       >
         <BrandLogo class="h-auto w-24" />
@@ -88,7 +84,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
       >
         <!-- Navigation links and Authentication component -->
         {
-          strings.navBarLinks.map((link) => {
+          enStrings.navBarLinks.map((link) => {
             if (link.name === "Services") {
               return <MegaMenuLink />;
             } else {
