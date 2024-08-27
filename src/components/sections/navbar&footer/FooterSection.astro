@@ -3,9 +3,13 @@
 import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
 import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro";
 import enStrings from "@utils/navigation.ts";
+import frStrings from "@utils/fr/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import BrandLogo from "@components/BrandLogo.astro";
 import { SITE } from "@data/constants";
+
+// Select the correct translation based on the page's lang prop:
+const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
 
 // Define the variables that will be used in this component
 const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Stay up to date";
@@ -24,7 +28,7 @@ const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez infor
       </div>
       <!-- An array of links for Product and Company sections -->
       {
-        enStrings.footerLinks.map((section) => (
+        strings.footerLinks.map((section) => (
           <div class="col-span-1">
             <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
               {section.section}
@@ -75,15 +79,15 @@ const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez infor
 
       <!-- Social Brands -->
       <div>
-        <FooterSocialLink url={enStrings.socialLinks.facebook}
+        <FooterSocialLink url={strings.socialLinks.facebook}
           ><Icon name="facebookFooter" />
         </FooterSocialLink>
 
-        <FooterSocialLink url={enStrings.socialLinks.instagram}
+        <FooterSocialLink url={strings.socialLinks.instagram}
           ><Icon name="instagram" />
         </FooterSocialLink>
 
-        <FooterSocialLink url={enStrings.socialLinks.tiktok}
+        <FooterSocialLink url={strings.socialLinks.tiktok}
           ><Icon name="tiktok" />
         </FooterSocialLink>
       </div>
