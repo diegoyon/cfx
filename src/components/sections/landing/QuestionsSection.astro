@@ -1,0 +1,46 @@
+---
+import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
+
+// Define props from Astro
+const { title, primaryBtn, primaryBtnURL } = Astro.props;
+
+// Define TypeScript interface for props
+interface Props {
+  title: string;
+  primaryBtn?: string;
+  primaryBtnURL?: string;
+}
+---
+
+<section
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full flex flex-col lg:flex-row gap-10 lg:gap-16"
+>
+  <div
+    class="flex lg:flex-[1.5_1.5_0] flex-col gap-10 md:flex-row lg:gap-x-5 text-neutral-600 dark:text-neutral-400 font-medium"
+  >
+    <h2
+      class="uppercase text-3xl font-medium text-black md:hidden dark:text-white"
+    >
+      ¿Es CrossFit Xela para tí?
+    </h2>
+    <p class="lg:text-lg">
+      1. ¿Has probado otros gimnasios, pero te aburres rápido y ya no sigues?
+    </p>
+    <p class="lg:text-lg">
+      2. ¿Estás buscando algo nuevo, divertido y retador?
+    </p>
+    <p class="lg:text-lg">
+      3. ¿Estás buscando entrenadores profesionales y experimentados que te
+      ayuden a estar en forma?
+    </p>
+  </div>
+  <!-- Title and description -->
+  <div class="lg:flex-1 mx-auto w-full items-start flex flex-col gap-3">
+    <h3
+      class="text-balance text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 sm:text-3xl"
+    >
+      {title}
+    </h3>
+    {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
+  </div>
+</section>

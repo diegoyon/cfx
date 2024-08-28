@@ -14,10 +14,11 @@ import heroImage from "@images/family-working-out.jpg";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
+import featureImage from "@images/atletas-despues-de-murph.jpg";
+import frontsquat from "@images/atleta-haciendo-front-squat.webp";
 import functional from "@images/atletas-haciendo-box-jumps.jpg";
-import dashboard from "@images/dashboard-image.avif";
+import pegboard from "@images/atleta-subiendo-el-pegboard.webp";
+import QuestionsSection from "@/components/sections/landing/QuestionsSection.astro";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -51,47 +52,48 @@ const avatarSrcs: Array<string> = [
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
-  <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+  <QuestionsSection
+    title="SI RESPONDISTE QUE SÍ A ALGUNA DE ESTAS PREGUNTAS, ¡CROSSFIT XELA ES PARA TÍ!"
+    primaryBtn="Agenda tu clase de prueba"
+    primaryBtnURL="/contact"
   />
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Nuestra Comunidad es lo que nos Hace Especiales"
+    subTitle="En CrossFit Xela, somos mucho más que un gimnasio. Nos esforzamos por crear un ambiente donde no solo te motives a entrenar, sino que también disfrutes de la compañía de tus compañeros de clase. Queremos que te entusiasme tanto venir que llegues 30 minutos antes para estirar, calentar y ponerte al día con tus amigos."
     src={featureImage}
-    alt="ScrewFast products in floating boxes"
+    alt="Comunidad CrossFit Xela"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`¿Cuáles son algunos <span class="text-yellow-500 dark:text-yellow-400">beneficios</span> de entrenar en CrossFit Xela?`
     tabs={[
       {
-        heading: "Movimientos Funcionales",
+        heading: "Disminuye porcentaje de grasa y aumenta masa muscular",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: functional,
-        alt: "Yellow and black heavy equipment on brown grass field",
+          "CrossFit te permitirá reducir el porcentaje de grasa corporal, lo que te ayudará a bajar de peso. Te facilitará alcanzar tu peso ideal y debido a eso, tu figura será más esbelta y proporcional.",
+        svg: "balance",
+        src: pegboard,
+        alt: "Atleta subiendo el pegboard durante un WOD de CrossFit",
         first: true,
       },
       {
-        heading: "Levantamiento de Pesas",
+        heading: "Mejora tu salud física y mental",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
+          "Aumenta tu resistencia, fuerza, equilibrio, coordinación, etc. Pero además, al ser un hábito saludable reforzará tu sistema inmunológico y estarás más protegido contra enfermedades leves, resfriados, por ejemplo. Además, ayuda contra el estrés y la ansiedad.",
+        svg: "health",
+        src: functional,
+        alt: "Atletas haciendo box jumps durante un WOD de CrossFit",
         second: true,
       },
       {
-        heading: "Movimientos de Gimnasia",
+        heading: "Fortalece la musculatura",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
+          "Gracias a su variedad de ejercicios, permite trabajar de forma integral los musculos de tu cuerpo. Evidentemente, este trabajo te hará más fuerte, y podrás levantar pesos más fácilmente. Pero no sólo serás más fuerte físicamente, como verás más adelante serás más fuerte mentalmente.",
+        svg: "arm",
+        src: frontsquat,
+        alt: "Atleta haciendo front squat durante un WOD de CrossFit",
       },
     ]}
   />
@@ -138,8 +140,8 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="¡Comienza hoy!"
+    subTitle="¡No esperes más! Agenda tu clase de prueba y descubre por qué CrossFit Xela es el mejor lugar para entrenar en Quetzaltenango."
+    url="#"
   />
 </MainLayout>

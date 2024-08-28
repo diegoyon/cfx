@@ -5,7 +5,10 @@ import GithubBtn from "@components/ui/buttons/GithubBtn.astro";
 // Define props from Astro
 const { title, subTitle, url } = Astro.props;
 
-const btnTitle = Astro.currentLocale === "fr" ? "Continuer avec Github" : "Continue with Github";
+const btnTitle =
+  Astro.currentLocale === "fr"
+    ? "Continuer avec Github"
+    : "Solicita tu clase de prueba";
 
 // Define TypeScript interface for props
 interface Props {
@@ -22,99 +25,40 @@ interface Props {
   <div
     class="absolute left-0 top-[55%] scale-90 md:top-[20%] xl:left-[10%] xl:top-[25%]"
   >
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#ea580c"
-      viewBox="0 0 24 24"
-    >
-      <path
+    <svg width="64" height="64" viewBox="0 0 2048 2048"
+      ><path
         fill="#ea580c"
         stroke="#ea580c"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M12 23a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM3 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM3 18a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-      ></path>
-      <path
-        stroke="#ea580c"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M21 7.353v9.294a.6.6 0 0 1-.309.525l-8.4 4.666a.6.6 0 0 1-.582 0l-8.4-4.666A.6.6 0 0 1 3 16.647V7.353a.6.6 0 0 1 .309-.524l8.4-4.667a.6.6 0 0 1 .582 0l8.4 4.667a.6.6 0 0 1 .309.524Z"
-      ></path>
-      <path
-        stroke="#ea580c"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="m3.528 7.294 8.18 4.544a.6.6 0 0 0 .583 0l8.209-4.56M12 21v-9"
-      ></path>
-    </svg>
+        d="m1883 640l128 128l-283 282l-320-319l-677 677l319 320l-282 283l-128-128l-160 159l-192-191q-10 9-20 21t-22 22t-25 18t-29 8q-26 0-45-19t-19-45q0-15 7-28t18-25t23-22t21-21L6 1568l159-160l-128-128l283-282l320 319l677-677l-319-320l282-283l128 128L1568 6l192 191q10-9 20-21t22-22t25-18t29-8q26 0 45 19t19 45q0 15-7 28t-18 25t-23 22t-21 21l191 192zM549 1792l-293-293l-69 69l293 293zm321-64l-550-550l-101 102l549 549zm629-1472l293 293l69-69l-293-293zm330 512l-549-549l-102 101l550 550z"
+      ></path></svg
+    >
   </div>
   <div class="absolute left-[85%] top-0 scale-75">
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#fbbf24"
-      viewBox="0 0 24 24"
+    <svg width="64" height="64" color="#fbbf24" viewBox="0 0 48 48"
+      ><g fill="none" stroke="currentColor" stroke-width="4"
+        ><path
+          stroke="#fbbf24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 44h40M28 30h6.19c2.27 0 6.81 1.344 6.81 6.72V44m-6-14l5-11l-6-13m-5 2l10-4"
+        ></path><circle cx="20" cy="30" r="8"></circle><path
+          stroke="#fbbf24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20 30h8m-7-8l-7-9m-4 0h8"></path><path d="M20 38a8 8 0 1 0 0-16"
+        ></path></g
+      ></svg
     >
-      <path
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
-      ></path>
-      <path
-        fill="#fbbf24"
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
-      <path
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5 10.5V9M5 15v-1.5"></path>
-      <path
-        fill="#fbbf24"
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM19 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-      ></path>
-      <path
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M10.5 19H9M15 19h-1.5"></path>
-    </svg>
   </div>
   <div
     class="absolute bottom-[5%] left-[60%] scale-[.6] xl:bottom-[15%] xl:left-[35%]"
   >
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#a3a3a3"
-      viewBox="0 0 24 24"
+    <svg width="64" height="64" viewBox="0 0 32 32" color="#a3a3a3"
+      ><path
+        fill="currentColor"
+        d="M20.219 5a3.08 3.08 0 0 0-3.063 3.063a3.08 3.08 0 0 0 3.063 3.062c1.683 0 3.093-1.383 3.093-3.063S21.902 5 20.219 5m0 2c.601 0 1.093.465 1.093 1.063s-.492 1.062-1.093 1.062c-.598 0-1.063-.46-1.063-1.063A1.05 1.05 0 0 1 20.219 7m-7.282 2a2.16 2.16 0 0 0-1.312.656L8.25 13.312l1.5 1.376l3.344-3.657c.035-.035.082-.058.125-.031l1.594 1.063l-2.344 3.25a2.6 2.6 0 0 0 .281 3.343l3.531 3.532L13.375 28h2.25l2.469-4.906a2 2 0 0 0-.375-2.313l-3.532-3.531a.62.62 0 0 1-.062-.781l2.344-3.282l.812.532l1.594 2.406c.371.555.988.875 1.656.875H25v-2h-4.469l-1.687-2.563l-.125-.156l-.157-.125l-4.218-2.812A2.08 2.08 0 0 0 12.938 9zm-.874 10.531L10.592 21H6v2h4.594c.527 0 1.031-.215 1.406-.594l1.469-1.468z"
+      ></path></svg
     >
-      <path
-        stroke="#a3a3a3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5.164 17c.29-1.049.67-2.052 1.132-3M11.5 7.794A16.838 16.838 0 0 1 14 6.296M4.5 22a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
-      ></path>
-      <path
-        stroke="#a3a3a3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M9.5 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5ZM19.5 7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
-      ></path>
-    </svg>
   </div>
   <!-- Hero Section Heading -->
   <div class="mx-auto mt-5 max-w-xl text-center">
@@ -138,7 +82,7 @@ interface Props {
   {
     url && (
       <div class="mt-8 flex justify-center gap-3">
-        <GithubBtn url={url} title={btnTitle}/>
+        <GithubBtn url={url} title={btnTitle} />
       </div>
     )
   }
