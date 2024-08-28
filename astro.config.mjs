@@ -7,10 +7,10 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
-  image: {
-    domains: ["images.unsplash.com"],
-  },
+  site: "https://crossfitxela.com",
+  // image: {
+  //   domains: ["images.unsplash.com"],
+  // },
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "fr"],
@@ -26,10 +26,10 @@ export default defineConfig({
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
+        defaultLocale: "es", // All urls that don't contain `fr` after `https://crossfitxela.com/` will be treated as default locale, i.e. `en`
         locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
+          en: "es", // The `defaultLocale` value must present in `locales` keys
+          en: "en",
         },
       },
     }),
@@ -43,11 +43,11 @@ export default defineConfig({
       // If both an Astro and Starlight i18n configurations are provided, an error is thrown.
       locales: {
         root: {
-          label: "English",
-          lang: "en",
+          label: "Español",
+          lang: "es",
         },
         de: { label: "Deutsch", lang: "de" },
-        es: { label: "Español", lang: "es" },
+        en: { label: "English", lang: "en" },
         fa: { label: "Persian", lang: "fa", dir: "rtl" },
         fr: { label: "Français", lang: "fr" },
         ja: { label: "日本語", lang: "ja" },
@@ -101,14 +101,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://crossfitxela.com" + "/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://crossfitxela.com" + "/social.webp",
           },
         },
       ],
