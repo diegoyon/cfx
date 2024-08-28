@@ -84,10 +84,13 @@ const appleTouchIcon = await getImage({
 }
 <meta charset="utf-8" />
 <meta content={meta} name="description" />
+<meta name="web_author" content={author} />
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-30DR7Z9VB3"
-></script>
-<script>
+<script
+  async
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-30DR7Z9VB3"></script>
+<script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -96,7 +99,6 @@ const appleTouchIcon = await getImage({
 
   gtag("config", "G-30DR7Z9VB3");
 </script>
-<meta name="web_author" content={author} />
 <meta
   name="viewport"
   content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
