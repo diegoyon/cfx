@@ -84,6 +84,18 @@ const appleTouchIcon = await getImage({
 }
 <meta charset="utf-8" />
 <meta content={meta} name="description" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30DR7Z9VB3"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-30DR7Z9VB3");
+</script>
 <meta name="web_author" content={author} />
 <meta
   name="viewport"
