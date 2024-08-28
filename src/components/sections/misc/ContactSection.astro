@@ -9,11 +9,12 @@ import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
-const title: string = "Contact us";
+const title: string = "Contacto";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
-const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+  "¿Quieres agendar una clase de prueba? Escríbenos más información sobre ti con la fecha y hora que te gustaría visitarnos.";
+const formTitle: string = "Llena el formulario";
+const formSubTitle: string =
+  "Nos pondremos en contacto contigo de 1 a 2 días hábiles.";
 ---
 
 <!-- Contact Us -->
@@ -39,31 +40,19 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
         </h2>
         <!-- Form for user input with various input fields.-->
         <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form>
+        <form action="https://formspree.io/f/xanwvbbv" method="POST">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <TextInput
-                id="hs-firstname-contacts"
-                label="First Name"
-                name="hs-firstname-contacts"
-              />
-              <TextInput
-                id="hs-lastname-contacts"
-                label="Last Name"
-                name="hs-firstname-contacts"
-              />
+              <TextInput id="first-name" label="Nombre" name="first-name" />
+              <TextInput id="last-name" label="Apellido" name="last-name" />
             </div>
-            <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
-            <TextAreaInput
-              id="hs-about-contacts"
-              label="Details"
-              name="hs-about-contacts"
-            />
+            <EmailContactInput id="email" />
+            <PhoneInput id="phone-number" />
+            <TextAreaInput id="message" label="Mensaje" name="message" />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+            <AuthBtn title="Enviar" />
           </div>
 
           <div class="mt-3 text-center">
@@ -76,7 +65,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        <ContactIconBlock
+        <!-- <ContactIconBlock
           heading="Knowledgebase"
           content="Browse through all of our knowledgebase articles."
           isLinkVisible={true}
@@ -84,32 +73,32 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           linkURL="#"
           isArrowVisible={true}
           ><Icon name="question" />
-        </ContactIconBlock>
+        </ContactIconBlock> -->
 
         <ContactIconBlock
-          heading="FAQ"
+          heading="Preguntas Frecuentes"
           content="Explore our FAQ for quick, clear answers to common queries."
           isLinkVisible={true}
           linkTitle="Visit FAQ"
-          linkURL="#"
+          linkURL="/#faq"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Visítanos"
+          content="CrossFit Xela se encuentra detrás del Hospital Vida"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="11 calle D 1-45 zona 8, Quetzaltenango"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
+          heading="¿Prefieres escribirnos un correo electrónico?"
+          content="Escríbenos a:"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
-          linkURL="#"
+          linkTitle="crossfitxela@gmail.com"
+          linkURL="mailto:crossfitxela@gmail.com"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
       </div>

@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Te contestamos las preguntas más frecuentes para que salgas de dudas",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "¿Es para todos?",
+      "answer": "¡Definitivamente! Nuestro programa se adapta a todas las edades, niveles de condición física y objetivos. Ya seas un principiante o un atleta experimentado, tenemos un lugar para ti en nuestra comunidad."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "¿Tengo que tener una buena condición física para hacer CrossFit?",
+      "answer": "No es necesario estar en forma ni practicar deportes regularmente para comenzar con CrossFit. Adaptaremos todos los movimientos a tu nivel, garantizando un progreso seguro en tu salud física y mental."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "¿Puedo hacer CrossFit con molestias o lesiones?",
+      "answer": "¡Por supuesto! Habla con nuestro personal antes de la clase para que podamos adaptar el entrenamiento a tu situación. Contamos con coaches con experiencia en lesiones que te ayudarán durante tu proceso."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "¿Puedo hacer CrossFit estando embarazada?",
+      "answer": "Sí, mantenerse activa durante el embarazo es importante y el CrossFit puede ser una excelente opción. Nuestros coaches te brindarán un apoyo cercano y adaptarán los entrenamientos para tu comodidad y seguridad."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "¿Las clases se dividen por niveles?",
+      "answer": "En CrossFit, no hay niveles predefinidos. Adaptamos los ejercicios y los pesos según tus capacidades y aumentamos gradualmente las demandas físicas. Tu coach te asesorará para personalizar tu entrenamiento y alcanzar tus objetivos."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "¿CrossFit te lesiona?",
+      "answer": "Toda actividad física conlleva un riesgo de lesiones. CrossFit es bastante seguro y tiene la menor tasa de lesiones en comparación con otros deportes. Además, con la supervisión de nuestros coaches y la correcta ejecución de los movimientos, el riesgo es muy bajo. ¡Es mucho más peligroso quedarse en casa sin hacer ejercicio!"
     }
   ]
 }
