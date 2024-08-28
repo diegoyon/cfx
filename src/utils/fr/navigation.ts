@@ -1,4 +1,3 @@
-
 const navBarLinks = [
   { name: "Accueil", url: "/fr" },
   { name: "Produits", url: "/fr/products" },
@@ -28,11 +27,11 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "#",
-  slack: "#",
+  facebook: "https://www.facebook.com/crossfitxela",
+  instagram: "https://www.instagram.com/crossfitxela/",
+  tiktok: "https://www.tiktok.com/@crossfitxela",
+  google: "https://www.google.com/",
+  slack: "https://slack.com/",
 };
 
 export default {
