@@ -26,9 +26,66 @@ const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
   "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
 ];
+
+import { SITE } from "@data/constants";
+const pageTitle: string = `Gimnasio de CrossFit en Quetzaltenango, Guatemala | ${SITE.title}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "@id": "https://crossfitxela.com",
+  url: "https://crossfitxela.com",
+  name: "CrossFit Xela",
+  description:
+    "Únete a CrossFit Xela, el único gimnasio afiliado a CrossFit en Quetzaltenango con coaches certificados y más de 8 años de experiencia. Disfruta de entrenamientos de alta intensidad para todos los niveles. ¡Comienza tu viaje fitness con nosotros hoy mismo!",
+  image: "https://crossfitxela.com/icon.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "11 calle D 1-45 zona 8",
+    addressLocality: "Quetzaltenango",
+    addressRegion: "Quetzaltenango",
+    postalCode: "09001",
+    addressCountry: "GT",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "14.86361",
+    longitude: "-91.52524",
+  },
+  telephone: "+502-7725-8352",
+  openingHours: "Mo-Fr 05:00-20:30, Sa 07:30-12:30",
+  sameAs: [
+    "https://www.facebook.com/crossfitxela",
+    "https://www.instagram.com/crossfitxela",
+  ],
+  priceRange: "$",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+502-7725-8352",
+    contactType: "Customer Service",
+    areaServed: "GT",
+    availableLanguage: [
+      {
+        "@type": "Language",
+        name: "Spanish",
+        alternateName: "es",
+      },
+      {
+        "@type": "Language",
+        name: "English",
+        alternateName: "en",
+      },
+    ],
+  },
+  logo: {
+    "@type": "ImageObject",
+    url: "https://crossfitxela.com/icon.png",
+    width: 500,
+    height: 500,
+  },
+};
 ---
 
-<MainLayout>
+<MainLayout title={pageTitle} structuredData={schema}>
   <!-- <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"

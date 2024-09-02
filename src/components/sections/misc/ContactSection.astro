@@ -77,9 +77,9 @@ const formSubTitle: string =
 
         <ContactIconBlock
           heading="Preguntas Frecuentes"
-          content="Explore our FAQ for quick, clear answers to common queries."
+          content="Encuentra respuestas a las preguntas más comunes."
           isLinkVisible={true}
-          linkTitle="Visit FAQ"
+          linkTitle="Ir a Preguntas Frecuentes"
           linkURL="/#faq"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
@@ -87,9 +87,12 @@ const formSubTitle: string =
 
         <ContactIconBlock
           heading="Visítanos"
-          content="CrossFit Xela se encuentra detrás del Hospital Vida"
-          isAddressVisible={true}
-          addressContent="11 calle D 1-45 zona 8, Quetzaltenango"
+          content="CrossFit Xela se encuentra en la entrada donde está Vipersa, detrás del Hospital Vida."
+          isLinkVisible={true}
+          isArrowVisible={true}
+          isTargetBlank={true}
+          linkTitle="11 calle D 1-45 zona 8, Quetzaltenango"
+          linkURL="https://maps.app.goo.gl/QnMyssuRWVLUDVWG6"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
@@ -97,6 +100,7 @@ const formSubTitle: string =
           heading="¿Prefieres escribirnos un correo electrónico?"
           content="Escríbenos a:"
           isLinkVisible={true}
+          isArrowVisible={true}
           linkTitle="crossfitxela@gmail.com"
           linkURL="mailto:crossfitxela@gmail.com"
           ><Icon name="envelopeOpen" />
