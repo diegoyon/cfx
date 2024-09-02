@@ -38,7 +38,7 @@ export default defineConfig({
       },
     }),
     starlight({
-      title: "ScrewFast Docs",
+      title: "CrossFit Xela Docs",
       defaultLocale: "root",
       // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
       // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
@@ -50,43 +50,17 @@ export default defineConfig({
           label: "Español",
           lang: "es",
         },
-        de: {
-          label: "Deutsch",
-          lang: "de",
-        },
         en: {
           label: "English",
           lang: "en",
-        },
-        fa: {
-          label: "Persian",
-          lang: "fa",
-          dir: "rtl",
-        },
-        fr: {
-          label: "Français",
-          lang: "fr",
-        },
-        ja: {
-          label: "日本語",
-          lang: "ja",
-        },
-        "zh-cn": {
-          label: "简体中文",
-          lang: "zh-CN",
         },
       },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
-          label: "Quick Start Guides",
+          label: "Guías de Inicio Rápido",
           translations: {
-            de: "Schnellstartanleitungen",
-            es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
+            en: "Quick Start Guides",
           },
           autogenerate: {
             directory: "guides",
