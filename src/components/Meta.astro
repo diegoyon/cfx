@@ -29,13 +29,13 @@ const ogTitle = OG.title;
 const ogDescription = OG.description;
 const socialImageRes = await getImage({
   src: OG.image,
-  width: 1200,
-  height: 600,
+  width: 680,
+  height: 510,
 });
 const socialImage = Astro.url.origin + socialImageRes.src; // Get the full URL of the image (https://stackoverflow.com/a/9858694)
 
 const languages: { [key: string]: string } = {
-  en: "",
+  es: "es",
   fr: "fr",
 };
 
@@ -52,7 +52,7 @@ const fullPath: string = Astro.url.pathname;
 const alternateLanguageLinks: string = Object.entries(languages)
   .map(([lang, prefix]: [string, string]) => {
     const basePath: string =
-      lang === "en" ? fullPath.replace(/^\/fr\//, "/") : fullPath;
+      lang === "es" ? fullPath.replace(/^\/fr\//, "/") : fullPath;
 
     const href: string = createHref(lang, prefix, basePath);
 

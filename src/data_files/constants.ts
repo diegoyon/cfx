@@ -35,8 +35,8 @@ export const OG = {
   locale: "es-GT",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Entrenamiento Funcional & Comunidad CrossFit`,
+  title: `${SITE.title}: : CrossFit Xela`,
   description:
-    "CrossFit Xela ofrece entrenamiento funcional de alta calidad en Quetzaltenango. Con más de 8 años de experiencia, coaches certificados y un ambiente comunitario, somos el lugar perfecto para transformar tu vida. ¡Únete a nuestra comunidad hoy!",
+    "CrossFit Xela es el único gimnasio afiliado a CrossFit en Quetzaltenango, Guatemala. Ofrecemos entrenamiento funcional de alta calidad con coaches certificados y más de 8 años de experiencia ayudando a nuestra comunidad a alcanzar sus metas de fitness. Descubre nuestra oferta de clases y únete a una comunidad apasionada por el bienestar.",
   image: ogImageSrc,
 };

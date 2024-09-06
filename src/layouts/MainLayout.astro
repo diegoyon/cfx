@@ -17,7 +17,7 @@ interface Props {
 }
 ---
 
-<html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
+<html lang={lang} class="scroll-pt-16 scroll-smooth">
   <head>
     <Meta meta={meta} structuredData={structuredData} />
     <title>{title}</title>
@@ -31,9 +31,6 @@ interface Props {
       } else {
         document.documentElement.classList.remove("dark");
       }
-    </script>
-    <script>
-      import "@scripts/lenisSmoothScroll.js";
     </script>
   </head>
   <body
