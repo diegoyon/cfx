@@ -16,17 +16,56 @@ export const SEO = {
   description: SITE.description,
   structuredData: {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    inLanguage: "es-GT",
-    "@id": SITE.url,
-    url: SITE.url,
-    name: SITE.title,
-    description: SITE.description,
-    isPartOf: {
-      "@type": "WebSite",
-      url: SITE.url,
-      name: SITE.title,
-      description: SITE.description,
+    "@type": "HealthClub",
+    "@id": "https://crossfitxela.com",
+    url: "https://crossfitxela.com",
+    name: "CrossFit Xela",
+    description:
+      "Únete a CrossFit Xela, el único gimnasio afiliado a CrossFit en Quetzaltenango con coaches certificados y más de 8 años de experiencia. Disfruta de entrenamientos de alta intensidad para todos los niveles. ¡Comienza tu viaje fitness con nosotros hoy mismo!",
+    image: "https://crossfitxela.com/icon.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "11 calle D 1-45 zona 8",
+      addressLocality: "Quetzaltenango",
+      addressRegion: "Quetzaltenango",
+      postalCode: "09001",
+      addressCountry: "GT",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "14.86361",
+      longitude: "-91.52524",
+    },
+    telephone: "+502-7725-8352",
+    openingHours: "Mo-Fr 05:00-20:30, Sa 07:30-12:30",
+    sameAs: [
+      "https://www.facebook.com/crossfitxela",
+      "https://www.instagram.com/crossfitxela",
+    ],
+    priceRange: "$",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+502-7725-8352",
+      contactType: "Customer Service",
+      areaServed: "GT",
+      availableLanguage: [
+        {
+          "@type": "Language",
+          name: "Spanish",
+          alternateName: "es",
+        },
+        {
+          "@type": "Language",
+          name: "English",
+          alternateName: "en",
+        },
+      ],
+    },
+    logo: {
+      "@type": "ImageObject",
+      url: "https://crossfitxela.com/icon.png",
+      width: 500,
+      height: 500,
     },
   },
 };
